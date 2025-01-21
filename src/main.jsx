@@ -28,6 +28,14 @@ import { PropDrilling } from "./components/propDriling.jsx";
 import { Home } from "./components/hooks/ContaxtApi/Home.jsx";
 import { BioProvider } from "./components/hooks/ContaxtApi/index.jsx";
 import { About } from "./components/hooks/ContaxtApi/about.jsx";
+import {
+  ThemeChild,
+  ThemeProvider,
+} from "./components/hooks/ContaxtApi/ToggleThemeProject.jsx";
+import { UseReducer } from "./components/hooks/useReducer/index.jsx";
+import { ParentComponentUseMemo } from "./components/hooks/memo/useMemo.jsx";
+import ParentComponent from "./components/hooks/memo/memoVSuseMemo.jsx";
+import Parent from "./components/hooks/memo/UseCallback.jsx";
 
 // import { Simbling, State, UserData } from "./components/hooks/State.jsx";
 
@@ -58,9 +66,16 @@ createRoot(document.getElementById("root")).render(
     {/* <ForwardRef /> */}
     {/* <UseId /> */}
     {/* <PropDrilling /> */}
-    <BioProvider>
+    {/* <BioProvider>
       <Home />
       <About />
-    </BioProvider>
+    </BioProvider> */}
+    {/* <ThemeProvider>
+<ThemeChild />
+    </ThemeProvider> */}
+    {/* <UseReducer /> */}
+    {/* <ParentComponent /> */}
+    {/* <ParentComponentUseMemo /> */}
+    <Parent />
   </StrictMode>
 );
